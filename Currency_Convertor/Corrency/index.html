@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <h1>Currency Converter</h1>
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" min="0">
+    </div>
+    <div>
+        <label for="from">From:</label>
+        <select id="from">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="INR">INR</option>
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="SGD">SGD</option>
+        <option value="MYR">MYR</option>
+        
+      </select>
+    </div>
+    <div>
+        <label for="to">To:</label>
+        <select id="to">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="INR">INR</option>
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="SGD">SGD</option>
+        <option value="MYR">MYR</option>
+        
+      </select>
+    </div>
+    <button id="convertBtn">Convert</button>
+    <p id="result"></p>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

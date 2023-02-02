@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Add styles for text formatting */
+        
+        p {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Add a text area for the user to input text -->
+    <textarea id="text-input"></textarea>
+    <!-- Add a button to format the text -->
+    <button id="format-button">Format Text</button>
+    <!-- Add a div to display the formatted text -->
+    <div id="formatted-text"></div>
+
+    <script>
+        // Get the input text and formatted text elements
+        const textInput = document.getElementById("text-input");
+        const formattedText = document.getElementById("formatted-text");
+        // Get the format button
+        const formatButton = document.getElementById("format-button");
+        // Add an event listener to the format button to format the text
+        formatButton.addEventListener("click", function() {
+            formattedText.innerHTML = textInput.value;
+        });
+    </script>
+</body>
+
+</html>
